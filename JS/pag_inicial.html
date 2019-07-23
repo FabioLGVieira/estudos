@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<script language="javascript" src="verificacpf.js"></script>-->
+	<title>Inicial</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="nomeCPF" id="cpfvar" placeholder="Insira seu cpf:">
+		<input type="submit" onmouseover="verifica()">
+
+	</form>
+	<script> 
+		function verifica(){
+		var s = document.getElementById('cpfvar');
+		var cpf = s.value.split('');
+		var primeiro = false, segundo = false, soma = 0, c = 10;
+			for (var i = 0; i<9;i++) {
+				console.log("digito: " + cpf[i] + " cont: " + c + " soma: " + soma );
+				soma += cpf[i] * c;
+				c--;
+			}
+		primeiro = (soma*10)%11;
+		alert(primeiro);
+		soma = 0;
+		c = 11;
+		for (var i = 0; i<10;i++) {
+				soma += cpf[i] * c;
+				c--;
+			}
+		segundo = (soma*10)%11;
+		alert(segundo);
+		if(primeiro == cpf[9] && segundo == cpf[10]){
+			alert("cpf valido");
+		}
+		else{
+			alert("cpf falso");
+		}
+		}
+	</script>
+</body>
+</html>
