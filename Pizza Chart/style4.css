@@ -1,0 +1,27 @@
+body {
+    width: 800px;
+    transform: translateX(800px);
+    background-position: relative;
+    background-color: #000000;
+  }
+
+h1{
+    transform: rotateY(180deg) translate(110%);
+    color: #BF613F;
+}
+
+.button {
+    background-color: green;
+    color: #2FD929;
+    display: inline-block;
+    border: none;
+  }
+
+#botoes{
+    transform: rotateZ(45deg) translate(-300px, 500px);
+    text-align: center;
+}
+
+canvas{
+    transform: rotateX(30deg) rotateZ(-45deg) ;
+}

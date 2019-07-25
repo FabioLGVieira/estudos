@@ -1,0 +1,33 @@
+body {
+    background-color: #f0f0f0;
+    width: 1200px;
+  }
+
+h1{
+    color:  #a3e9b2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #733E32;
+    font-size: 40px;
+    text-align: center;
+}
+
+.button {
+    border: dashed #f0f0f0 1.5px;
+    background-color: #732119;
+    color: #F99F6F;
+    transform: translate(0px, -15px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+#botoes{
+    text-align: center;
+}
+
+canvas{
+    position: fixed;
+    right: 0px;
+    background-color: lightgray;
+}

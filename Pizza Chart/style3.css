@@ -1,0 +1,34 @@
+body {
+    background-image: linear-gradient( #f99f6f,skyblue);
+    height: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1200px;
+}
+
+h1{
+    color:  #F99F6F;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #732119;
+    font-size: 40px;
+    text-align: center;
+}
+
+.button {
+    background-color: #9CBFDF;
+    border: none;
+    font-size: 20px;
+    padding: 15px 100px;
+    color: #EFF0F4;
+  }
+
+#botoes{
+    transform: translate(0, -15px);
+    text-align: center;
+}
+
+canvas{
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.2);
+}
