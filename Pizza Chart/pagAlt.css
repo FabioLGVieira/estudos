@@ -116,3 +116,22 @@ h1{
     left: 5%;
     transform: translateY(-50%);
 }
+
+h4{
+    font-style: oblique;
+    font-weight: 900;
+}
+
+p{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.valor{
+    border: none;
+    background: rgba(255, 255, 255, .7)
+}
+
+.gerar{
+    background: rgba(255, 255, 255, .5)
+}
