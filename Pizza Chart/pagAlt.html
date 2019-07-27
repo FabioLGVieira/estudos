@@ -2,17 +2,33 @@
 <html>
 
 <head>
+    <script src="pagAlt.js"></script>
     <link id="styleAlt" rel="stylesheet" type="text/css" href="pagAlt.css">
     <title>Css Chart</title>
 </head>
 
 <body>
     <section>
-        <h1>Pizzas consumidas</h1>
+        <h1 id="h1">Pizzas consumidas</h1>
+        <div class="valores" style="height: 300px">
+            <p>Digite o valor e a porcentagem: </p>
+            <p>Janeiro: <input id="inputJan" type="text" placeholder="Nº de pizzas" value="50%"></p>
+            <p>Fevereiro: <input id="inputFev" type="text" placeholder="Nº de pizzas" value="70%"></p>
+            <p>Março: <input id="inputMar" type="text" placeholder="Nº de pizzas" value="40%"></p>
+            <p>Abril: <input id="inputAbr" type="text" placeholder="Nº de pizzas" value="60%"></p>
+            <p>Maio: <input id="inputMai" type="text" placeholder="Nº de pizzas" value="50%"></p>
+            <p>Junho: <input id="inputJun" type="text" placeholder="Nº de pizzas" value="80%"></p>
+            <p>Julho: <input id="inputJul" type="text" placeholder="Nº de pizzas" value="30%"></p>
+
+            <input type="submit" value="Gerar gráfico" onclick="createGraph()">
+        </div>
         <div class="box">
             <div class="boxN">
                 <div class="graphN" style="height: 0%">
                     <div class="percent">0</div>
+                </div>
+                <div class="graphN" style="height: 10%">
+                    <div class="percent">1</div>
                 </div>
                 <div class="graphN" style="height: 40%">
                     <div class="percent">4</div>
@@ -35,47 +51,45 @@
                 <div class="graphN" style="height: 80%">
                     <div class="percent">8</div>
                 </div>
+                <div class="graphN" style="height: 90%">
+                    <div class="percent">9</div>
+                </div>
                 <div class="graphN" style="height: 100%">
                     <div class="percent">10</div>
                 </div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 40%">
+                <div id="barraJan" class="graph" style="height: 50%">
                 </div>
                 <div class="name">Jan</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 20%">
+                <div id="barraFev" class="graph" style="height: 70%">
                 </div>
                 <div class="name">Fev</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 50%">
+                <div id="barraMar" class="graph" style="height: 40%">
                 </div>
                 <div class="name">Mar</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 70%">
+                <div id="barraAbr" class="graph" style="height: 60%">
                 </div>
                 <div class="name">Abr</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 60%">
+                <div id="barraMai" class="graph" style="height: 50%">
                 </div>
                 <div class="name">Mai</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 30%">
-                </div>
-                <div class="name">Mai</div>
-            </div>
-            <div class="skill">
-                <div class="graph" style="height: 80%">
+                <div id="barraJun" class="graph" style="height: 80%">
                 </div>
                 <div class="name">Jun</div>
             </div>
             <div class="skill">
-                <div class="graph" style="height: 60%">
+                <div id="barraJul" class="graph" style="height: 30%">
                 </div>
                 <div class="name">Jul</div>
             </div>
